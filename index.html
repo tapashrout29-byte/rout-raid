@@ -104,7 +104,7 @@ button{
 
 <input placeholder="Drop Location">
 
-<button>Book Now</button>
+<button onclick="bookRide()">Book Now</button>
 
 </div>
 
@@ -122,6 +122,23 @@ button{
 </div>
 
 </div>
+<script>
+function bookRide(){
 
+let pickup = document.querySelectorAll("input")[0].value;
+let drop = document.querySelectorAll("input")[1].value;
+
+if(pickup=="" || drop==""){
+alert("Please enter Pickup and Drop location");
+}
+else{
+alert("Your Rout Raid booking request has been received!");
+}
+
+}
+</script>
+
+</body>
+</html>
 </body>
 </html>
