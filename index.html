@@ -123,21 +123,25 @@ button{
 </div>
 
 </div>
+
 <script>
 function bookRide(){
 
-let pickup = document.querySelectorAll("input")[0].value;
-let drop = document.querySelectorAll("input")[1].value;
+let name = document.querySelectorAll("input")[0].value;
+let mobile = document.querySelectorAll("input")[1].value;
+let pickup = document.querySelectorAll("input")[2].value;
+let drop = document.querySelectorAll("input")[3].value;
 
-if(pickup=="" || drop==""){
-alert("Please enter Pickup and Drop location");
+if(name=="" || mobile=="" || pickup=="" || drop==""){
+alert("Please fill all details");
 }
 else{
-alert("Your Rout Raid booking request has been received!");
+alert("Thank you " + name + "! Your Rout Raid booking request has been received.");
 }
 
 }
 </script>
+
 
 </body>
 </html>
