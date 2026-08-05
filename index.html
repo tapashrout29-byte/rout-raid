@@ -4,86 +4,124 @@
 <title>Rout Raid</title>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    background: #f2f2f2;
-    text-align: center;
-    padding: 20px;
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f7f7f7;
 }
 
-.logo {
-    font-size: 45px;
-    font-weight: bold;
-    color: #ff6600;
+.header{
+    background:#ff6600;
+    color:white;
+    padding:25px;
+    border-radius:0 0 25px 25px;
 }
 
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    max-width: 400px;
-    margin: auto;
+.header h1{
+    font-size:40px;
+    margin:0;
 }
 
-.vehicle {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
+.container{
+    padding:20px;
 }
 
-.vehicle button {
-    background: #fff;
-    border: 2px solid #ff6600;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 16px;
+.card{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 5px 15px #ddd;
+    margin-top:20px;
 }
 
-input {
-    width: 90%;
-    padding: 12px;
-    margin: 8px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+.ride{
+    display:flex;
+    gap:10px;
 }
 
-.book {
-    background: #ff6600;
-    color: white;
-    border: none;
-    padding: 15px 35px;
-    border-radius: 10px;
-    font-size: 18px;
+.ride div{
+    flex:1;
+    background:#fff3e8;
+    padding:15px;
+    border-radius:15px;
+    font-size:18px;
+}
+
+input{
+    width:90%;
+    padding:14px;
+    margin:8px 0;
+    border-radius:12px;
+    border:1px solid #ddd;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#ff6600;
+    color:white;
+    border:none;
+    border-radius:15px;
+    font-size:18px;
+}
+
+.features{
+    display:flex;
+    justify-content:space-around;
+    margin-top:20px;
+}
+
+.features p{
+    font-size:14px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="logo">🚗 Rout Raid</div>
+<div class="header">
+<h1>🚗 Rout Raid</h1>
+<p>Your Local Ride Partner</p>
+</div>
 
-<h2>Your Local Ride App</h2>
+<div class="container">
 
 <div class="card">
 
-<h3>Choose Your Ride</h3>
+<h2>Book Your Ride</h2>
 
-<div class="vehicle">
-<button>🏍️ Bike</button>
-<button>🛺 Auto</button>
-<button>🚗 Car</button>
+<div class="ride">
+<div>🏍️<br>Bike</div>
+<div>🛺<br>Auto</div>
+<div>🚗<br>Car</div>
 </div>
+
+<br>
 
 <input placeholder="Pickup Location">
 
 <input placeholder="Drop Location">
 
-<button class="book">Book Ride</button>
+<button>Book Now</button>
 
 </div>
 
-<p>Fast & Easy Local Rides</p>
+
+<div class="card">
+
+<h3>Why Rout Raid?</h3>
+
+<div class="features">
+<p>⚡ Fast</p>
+<p>🛡️ Safe</p>
+<p>📍 Local</p>
+</div>
+
+</div>
+
+</div>
 
 </body>
 </html>
