@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Rout Raid Admin</title>
+<title>Rout Raid Admin Panel</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f4f4f4;
+}
+
+.header{
+background:#ff6600;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.container{
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:15px 0;
+border-radius:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.number{
+font-size:35px;
+font-weight:bold;
+color:#ff6600;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#ff6600;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+margin-top:10px;
+}
+</style>
+
 </head>
+
 <body>
 
-<h1>Rout Raid Admin Panel</h1>
+<div class="header">
+<h1>🚗 Rout Raid Admin</h1>
+<p>Dashboard</p>
+</div>
+
+<div class="container">
+
+<div class="card">
+<p>Total Drivers</p>
+<div class="number">0</div>
+</div>
+
+<div class="card">
+<p>Total Customers</p>
+<div class="number">0</div>
+</div>
+
+<div class="card">
+<p>Total Rides</p>
+<div class="number">0</div>
+</div>
+
+<div class="card">
+<p>Today's Earnings</p>
+<div class="number">₹0</div>
+</div>
+
+<button>View Ride Requests</button>
+
+<button>View Drivers</button>
+
+</div>
 
 </body>
-</html>
+  </html>
